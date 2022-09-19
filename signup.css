@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    width: 90%;
+    margin: auto;
+}
+ input{
+    height: 40px;
+    width: 350px;
+    margin-top: 10px;
+    border: 1px solid rgb(224, 224, 20);
+} 
+#main{
+    margin-left: 63%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 450px;
+    border-radius: 10px;
+    width: 420px;
+    padding: 30px;
+}
+#head{
+    display: flex;
+    gap: 20px;
+}
+#head>h3:last-child{
+    border-bottom: 3px solid rgb(224, 224, 20);
+    cursor: pointer;
+}
+#head>h3:first-child{
+    opacity: .4;
+}
+#head>h3:first-child:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+p{
+    font-size: 12px;
+    margin-top: 30px;
+}
+u{
+    color: blue;
+}
+#tick{
+    border: 1px solid;
+    height: 20px;
+    width: 20px;
+}
+form>div{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+.resister{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.resister:hover{
+    cursor: pointer;
+    background-color: rgb(22, 21, 21);
+}
+.logo{
+    height: 100px;
+    width: 400px;
+    margin-top: 30px;
+}
+.logo>img{
+    height: 90%;
+    width: 100%;
+}

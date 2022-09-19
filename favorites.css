@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img{
+    cursor: pointer;
+}
+body{
+    width: 99%;
+    margin: auto;
+}
+#logoPortion{
+    display: flex;
+    height: 85px;
+    margin-top: 16px;
+}
+.selectAllNavbar{
+    display: flex;
+    position: relative;
+    float:right;
+    gap: 30px;
+}
+.selectAllNavbar>select{
+    border: none;
+    cursor: pointer;
+}
+.selectAllNavbar+div{
+    display: flex;
+    position: relative;
+    float:right;
+    margin: 20px;
+    font-size: 20px;
+}
+.inputPortion{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.webLogo{
+    width: 300px;
+}
+.webLogo>img{
+    width:115%;
+    margin-top: 10px;
+}
+.signAndAll{
+    display: flex;
+    position: relative;
+    margin-right: -20px;
+    gap: 30px;
+    cursor: pointer;
+}
+.signAndAll>div{
+    display: flex;
+    width: 100px;
+    align-items: center;
+    gap: 5px;
+}
+.inputSearch{
+    display: flex;
+    width: 400px;
+    height: 35px;
+    border-radius: 20px;
+    border: 2px solid #ffda00 ;
+    position: relative;
+    margin-left: 60px;
+}
+#select{
+    border: none;
+    margin-left: 10px;
+}
+.searchText{
+    width: 80%;
+    border: none;
+}
+.search{
+    width: 12%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #ffda00;
+    cursor: pointer;
+}
+.search>img{
+    height: 75%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#heading{
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+#heading>h3{
+    margin-left: 100px;
+}
+.lowerNavbar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.rightNavbar{
+    display: flex;
+    gap: 20px;
+}
+.rightNavbar>img{
+    height: 70%;
+    margin-right: -16px;
+}
+.rightNavbar>p:nth-child(2){
+    font-size: 30px;
+    background-color: yellow;
+}
+.checked{
+    color: #ffda00;
+}
+.rightNavbar>span{
+    margin-right: -17px;
+}
+
+
+
+.favorites{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+}
+.favorites>div>div{
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: space-around;
+}

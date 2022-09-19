@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/productPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+</head>
+<body>
+    <div id="logoPortion">
+        <div class="webLogo"><img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt=""></div>
+        <div>
+            <div class="selectAllNavbar">
+                <select name="" id=""><option value="">Save $3 with App</option></select>
+                <select name="" id=""><option value="">Support Center</option></select>
+                <select name="" id=""><option value="">Ship to</option></select>
+                <select name="" id=""><option value="">Language</option></select>
+                <select name="" id=""><option value="">Country Website</option></select>
+            </div>
+            <div class="inputPortion">
+                <div class="inputSearch">
+                    <select name="" id="select">
+                        <option value="">All</option>
+                    </select>
+                    <input class="searchText" type="text" placeholder="Search Products">
+                    <div class="search">
+                        <img src="https://pixlok.com/wp-content/uploads/2021/12/Instagram-Search-Icon-982vbc.png" alt="">
+                    </div>
+                </div>
+                <div class="signAndAll">
+                    <div id="signIn">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAtFBMVEUAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAAAAAAAAAAAAADg4OAAAAACAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg4OAAAAAAAAAAAAAAAADf398AAAAAAAAAAADR0dEAAABISEipqakmJiYAAAAoKCgAAAAAAAAAAAA1NTXMzMwAAAAAAADf399WVlYAAAAAAACsrKzf398AAAAAAAAAAAAAAADg4ODR0dHe3t4ReYomAAAAOHRSTlMAQPzFDvXsrm47E/C+tKl/9+dnGQXx8NuvioN5VVBKRTQQBvrz7d3Z18u4t7SjlYBfX11NMDAfCv0TF7MAAADjSURBVCjPpZDXcsJADEXX29wbEHoCIT30fg3//1941svA2h5eOE+aOdJIuuRJ9iyB/O/zqhlQKFKrbByAuZy7DNQ1DReIiipCyktD7W3Xz7o74r3AMZSN0M9y/HcSwjYUwzRTvJIemKFC/BRqWZmKIU7FVL6rYahDgo+z2hWhXfq6AXx9nmYrBqwrP+s0qEPKeHFKc/H7VhGLBJq/oWEsCaDTi+O+LYCgeTNjATrXqR4HFB3valrfkONboysR3B0+IneMgOsxgeoywo50JbAx1RBSr0INLaWadaq4f2LVMCGPuACORSZPQ0RWdgAAAABJRU5ErkJggg==" alt="">
+                        <div id="signin">Sign In</div>
+                    </div>
+                    <div id="favourites">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAA81BMVEUAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADGxsYTExMAAAAAAADg4OAAAADf39/g4OAAAAAAAAAAAADg4OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADh4eEAAADi4uIAAADt7e3d3d1iYmLf39+RkZEAAADg4OAAAAArKyvf398QEBCoqKglJSXg4OAXFxfg4OAKCgohISHf39/f398dHR3f398AAADHx8cAAAAAAABSUlIvLy8AAAAAAAD////g4OAAAACSkpLV1dW0tLSHh4dycnJUVFRDQ0NMKKmhAAAASHRSTlMA+vTB+ZAoIAwF/NummWpAM/z89vHw5OHc0Me7mIuHc3BmU0tHPjwiFA37+/r47Ovr5drTz8C0s62to6GIgoB3ZF1WThsZEwOBbnz7AAAA+klEQVQoz73Q1W7DQBRF0WPm2GFsOCkzM7c+5f//msa3ELvtW6Wsh5krbc2MNJg5y9BUakNgqFHVDGta+kUK36coDr7KwGXTRNQmWeo6d1cN6iHEgsquDJdUIhkMbtgytOnjQ6f3OdTZkd3j+L5VjbdGGB2Uq8eLAHpsJMUh7b04cSJrbdJMluQp8iJOawEWVTmlcCeT1oGQdSQ0LscZ8wg4JylHN59NJpVbSY7Ht3Qpo5kcEqbCl1Q6C1ixJciVfPguNYNrqf89nLaVI6oRUvbJZylLu1RCZJy6fH2M4/w29T5+uC6w8LSqszLGLzebnAhs/OXc03P4r3d0M0A98TPbIwAAAABJRU5ErkJggg==" alt="">
+                        <div>Favourites</div>
+                    </div>
+                    <div id="cartPage">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAn1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqJAAUEQD/2QAAAABJPgAAAAAAAAAAAAD/2gD/2gAAAAAAAAD/2gAAAAAAAAAAAAD/2QAAAAAAAAD/2wAAAAAAAAD/2QAAAAD/4wAAAAD/2gD51ADQsQCiigB0YwBGOwCQauaIAAAALnRSTlMA09hV4UL48rFIE/zazLuVfXZJIR39++3r5+fk29TJqKakm46JgG9lW1pNNjISfz/FPQAAALRJREFUKM+dz1cKwzAQRdHn7vRip/feX+r+1xaDLDx2Igi5XyMODCP8mcWkvpkYwVDIg4mabBhkxs9qinx+qZxe0ka+Mn01zNkq0JmWvmJwFU0Ah6GiIzuSekCLa0UReRM0BRrcQRXwLmgB1OmlVOND0AaoMk5pyaegPVCpIG3Ll6ATYtqaPHYFXZJ3mH2+2Aq6ekF8D79UGrklPTu27Qgakq6ex6QlyBVk56kdBNnCqlpo7g1Gxypv685O3AAAAABJRU5ErkJggg==" alt="">
+                        <div>Cart</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="heading">
+        <h3>Category</h3>
+        <h3>SUPER DEALS</h3>
+        <h3>APP ONLY</h3>
+        <h3>NEW ARRIVALS</h3>
+    </div>
+    <div class="lowerNavbar">
+        <div>Home > Consumer Electronics > Smart Electronics > Smart Wristband</div>
+        <div class="rightNavbar">
+            <p>Store: <b>Mi-Fans Store</b></p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            <h4>4.5</h4>
+            <p>Contact Now</p>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAA81BMVEUAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADGxsYTExMAAAAAAADg4OAAAADf39/g4OAAAAAAAAAAAADg4OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADh4eEAAADi4uIAAADt7e3d3d1iYmLf39+RkZEAAADg4OAAAAArKyvf398QEBCoqKglJSXg4OAXFxfg4OAKCgohISHf39/f398dHR3f398AAADHx8cAAAAAAABSUlIvLy8AAAAAAAD////g4OAAAACSkpLV1dW0tLSHh4dycnJUVFRDQ0NMKKmhAAAASHRSTlMA+vTB+ZAoIAwF/NummWpAM/z89vHw5OHc0Me7mIuHc3BmU0tHPjwiFA37+/r47Ovr5drTz8C0s62to6GIgoB3ZF1WThsZEwOBbnz7AAAA+klEQVQoz73Q1W7DQBRF0WPm2GFsOCkzM7c+5f//msa3ELvtW6Wsh5krbc2MNJg5y9BUakNgqFHVDGta+kUK36coDr7KwGXTRNQmWeo6d1cN6iHEgsquDJdUIhkMbtgytOnjQ6f3OdTZkd3j+L5VjbdGGB2Uq8eLAHpsJMUh7b04cSJrbdJMluQp8iJOawEWVTmlcCeT1oGQdSQ0LscZ8wg4JylHN59NJpVbSY7Ht3Qpo5kcEqbCl1Q6C1ixJciVfPguNYNrqf89nLaVI6oRUvbJZylLu1RCZJy6fH2M4/w29T5+uC6w8LSqszLGLzebnAhs/OXc03P4r3d0M0A98TPbIwAAAABJRU5ErkJggg==" alt="">
+            <p>Favorites</p>
+        </div>
+    </div>
+    <div class="shead">Asseo Go Store</div>
+    <div><img src="https://i.gbsimg.com/storage/store/6507287161137004544/shopDecorationAuth/452d5b7d60ee.jpg" alt=""></div>
+    <div><img src="https://i.gbsimg.com/storage/store/6870745450383863808/shopDecorationAuth/16475/5c7cdbf3b0b9.jpg" alt=""></div>
+    <div class="b">
+        <img src="https://i.gbsimg.com/storage/store/6870745450383863808/shopDecorationAuth/16467/e3689e460dab.jpg" alt="">
+        <img src="https://i.gbsimg.com/storage/store/6870745450383863808/shopDecorationAuth/16467/5e8e74dfe449.jpg" alt="">
+        <img src="https://i.gbsimg.com/storage/store/6870745450383863808/shopDecorationAuth/16467/5ae8915b7837.jpg" alt="">
+    </div>
+    <h3>HOT PICK</h3>
+    <div class="products"></div>
+
+
+
+    
+    <div id="btm-scn">
+        <div id="about-social">
+            <div>
+                <h6>ABOUT <b style="color:green;font-size:20px">Gearbest.com</b> </h6>
+                <p>PRESS ROOM</p>
+                <p>COMPANY INFO</p>
+                <p>EXECUTIVE TEAM</p>
+                <p>CAREERS</p>
+                <p>GEARBEST.COM RECYCLING PROGRAM</p>
+                <p>BLOG</p>
+            </div>
+            <div>
+                <h6>HELP</h6>
+                <p>PRODUCT & HELP CENTER</p>
+                <p>SHIPPING</p>
+                <p>SATISFACTION GUARANTEE</p>
+                <p>PROMOTIONAL TERMS & CONDITIONS</p>
+                <p>GEARBEST.COM  FAQS</p>
+                <p>KLARNA</p>
+                <p>SITE MAP</p>
+            </div>
+            <div>
+                <h4>Let's Get Social</h4>
+                <p><i class="fa">&#xf09a;</i><i class="fa">&#xf099;</i><i class="fa">&#xf16d;</i><i class="fa">&#xf16a;</i><i class="fa">&#xf0d2;</i></p>
+            </div>
+        </div>
+        <div id="copyright">
+            <h6><i class="fa">&#xf1f9;</i>2022 Gearbest.com<span></span></h6>
+            <h6>Privacy Policy <span>|</span></h6>
+            <h6>Terms & Conditions<span>|</span> </h6>
+            <h6>Accessibility<span>|</span></h6>
+            <h6>California Supply Chains Act<span>|</span></h6>
+            <h6>DSA Code of Ethics<span>|</span></h6>
+            <h6>Disclaimer<span>|</span></h6>
+            <h6>Preference Center</h6>
+        </div>
+    </div>
+</body>
+</html>
+<script src="productPage.js"></script>

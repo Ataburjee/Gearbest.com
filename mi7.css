@@ -1,0 +1,262 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img{
+    cursor: pointer;
+}
+body{
+    width: 89%;
+    /* border: 1px solid; */
+    margin: auto;
+}
+#logoPortion{
+    display: flex;
+    height: 85px;
+    margin-top: 16px;
+}
+.selectAllNavbar{
+    display: flex;
+    position: relative;
+    float:right;
+    gap: 30px;
+}
+.selectAllNavbar>select{
+    border: none;
+    cursor: pointer;
+}
+.selectAllNavbar+div{
+    display: flex;
+    position: relative;
+    float:right;
+    margin: 20px;
+    font-size: 20px;
+}
+.inputPortion{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.webLogo{
+    width: 300px;
+}
+.webLogo>img{
+    width:115%;
+    margin-top: 10px;
+}
+.signAndAll{
+    display: flex;
+    position: relative;
+    margin-right: -20px;
+    gap: 30px;
+    cursor: pointer;
+}
+.signAndAll>div{
+    display: flex;
+    width: 100px;
+    align-items: center;
+    gap: 5px;
+}
+.inputSearch{
+    display: flex;
+    width: 400px;
+    height: 35px;
+    border-radius: 20px;
+    border: 2px solid #ffda00 ;
+    position: relative;
+    margin-left: 60px;
+}
+#select{
+    border: none;
+    margin-left: 10px;
+}
+.searchText{
+    width: 80%;
+    border: none;
+}
+.search{
+    width: 12%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #ffda00;
+    cursor: pointer;
+}
+.search>img{
+    height: 75%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#heading{
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+#heading>h3{
+    margin-left: 100px;
+}
+.lowerNavbar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.rightNavbar{
+    display: flex;
+    gap: 20px;
+}
+.rightNavbar>img{
+    height: 70%;
+    margin-right: -16px;
+}
+.rightNavbar>p:nth-child(2){
+    font-size: 30px;
+    background-color: yellow;
+}
+.checked{
+    color: #ffda00;
+}
+.rightNavbar>span{
+    margin-right: -17px;
+}
+.firstPart{
+    display: flex;
+    gap: 20px;
+}
+.miPortion{
+    width: 37%;
+}
+.flashPortion{
+    width: 70%;
+}
+.miPortion>img{
+    width: 100%;
+}
+.social{
+    display: flex;
+    margin-top: 40px;
+    gap: 5px;
+}
+.social>div{
+    width: 7%;
+}
+.social>div>img{
+    width: 100%;
+}
+.social>p{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.flashPortion>h3{
+    line-height: 20px;
+    margin-top: 20px;
+}
+.flashPortion>p{
+    color: blue;
+    margin-left: 80px;
+}
+.flashPortion>p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.flashdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #f30240;
+    color: white;
+    margin-top: 20px;
+}
+.belowFlashsale{
+    display: flex;
+}
+.belowFlashsale>div>p{
+    margin-top: 30px;
+}
+.pricePart{
+    display: flex;
+    gap: 20px;
+}
+.pricePart>h1{
+    color: #f30240;
+}
+.pricePart>h1+p{
+    text-decoration: line-through;
+    opacity: .8;
+    margin-top: 6px;
+}
+.pricePart>h1+p+p{
+    background-color: #f30240;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 7px;
+    margin-top: 7px;
+    font-size: 11px;
+    height: 22px;
+    border-radius: 7px;
+}
+.belowFlashsale>div>div{
+    margin-top: 20px;
+}
+.belowFlashsale>div:last-child{
+    margin-left: 50px;
+}
+.pricePart+div{
+    line-height: 10px;
+    font-size: 13px;
+}
+.a{
+    display: flex;
+    gap: 20px;
+}
+.pricePart+div+div{
+    border: 1px solid #f30240;
+    color: #f30240;
+    width: 50px;
+    padding: 3px;
+}
+.a>div{
+    border: 1px solid ;
+    padding: 3px;
+}
+.a>div:first-child{
+    color: #f30240;
+    border: 1 px solid#f30240;
+}
+.cartPart{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+.cartPart>div{
+    border: 1px solid;
+    width: 170px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartPart>div>img{
+    width: 70%;
+    height: 100%;
+}
+.cartPart>div:first-child{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #f30240;
+}
+.cartPart>div:nth-child(2){
+    border: 2px solid #f30240;
+    font-size: 20px;
+    font-weight: 600;
+    color: #f30240;
+}
+.cartPart>div:last-child{
+    background-color: yellow;
+    border: 1px solid yellow;
+}

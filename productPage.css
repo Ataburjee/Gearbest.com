@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img{
+    cursor: pointer;
+}
+body{
+    width: 99%;
+    margin: auto;
+}
+#logoPortion{
+    display: flex;
+    height: 85px;
+    margin-top: 16px;
+}
+.selectAllNavbar{
+    display: flex;
+    position: relative;
+    float:right;
+    gap: 30px;
+}
+.selectAllNavbar>select{
+    border: none;
+    cursor: pointer;
+}
+.selectAllNavbar+div{
+    display: flex;
+    position: relative;
+    float:right;
+    margin: 20px;
+    font-size: 20px;
+}
+.inputPortion{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.webLogo{
+    width: 300px;
+}
+.webLogo>img{
+    width:115%;
+    margin-top: 10px;
+}
+.signAndAll{
+    display: flex;
+    position: relative;
+    margin-right: -20px;
+    gap: 30px;
+    cursor: pointer;
+}
+.signAndAll>div{
+    display: flex;
+    width: 100px;
+    align-items: center;
+    gap: 5px;
+}
+.inputSearch{
+    display: flex;
+    width: 400px;
+    height: 35px;
+    border-radius: 20px;
+    border: 2px solid #ffda00 ;
+    position: relative;
+    margin-left: 60px;
+}
+#select{
+    border: none;
+    margin-left: 10px;
+}
+.searchText{
+    width: 80%;
+    border: none;
+}
+.search{
+    width: 12%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #ffda00;
+    cursor: pointer;
+}
+.search>img{
+    height: 75%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#heading{
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+#heading>h3{
+    margin-left: 100px;
+}
+.lowerNavbar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.rightNavbar{
+    display: flex;
+    gap: 20px;
+}
+.rightNavbar>img{
+    height: 70%;
+    margin-right: -16px;
+}
+.rightNavbar>p:nth-child(2){
+    font-size: 30px;
+    background-color: yellow;
+}
+.checked{
+    color: #ffda00;
+}
+.rightNavbar>span{
+    margin-right: -17px;
+}
+.shead{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.b{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.shead+div+div{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+}
+
+
+
+
+
+#sp-al-pdt>button:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+#btm-scn{
+    margin-top: 4%;
+    height: auto;
+    padding:15px;
+    border-top:1px solid lightgray
+}
+#about-social{
+    display: flex;
+    line-height: 40px;
+    opacity: 0.8;
+    justify-content: space-between;
+}
+#about-social>div>p{
+    text-align: left;
+    font-size: 13px;
+    line-height: 35px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#about-social>div>h4{
+    font-size: 30px;
+    font-weight: 350;
+    padding-left:25px;
+}
+#about-social>div>p>i{
+    font-size: 24px;
+    margin: 30px;
+    cursor: pointer;
+}
+#copyright{
+    display:flex;
+    justify-content:start;
+    margin-top: 5%;
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+}
+#copyright>h6>span{
+    margin: 10px;
+}
+
+@media all and (min-device-width:768px) and (max-device-width:1080px){
+#pdt-hlt{
+    width: 20%;
+    padding: 30px;
+}
+#pdt-hlt>p:nth-child(1){
+    font-size: 20px;
+    opacity: 0.8;
+    margin-bottom: 12px;
+} 
+#pdt-hlt>p:nth-child(2){
+    font-size: 20px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}  
+#pdt-hlt>p:nth-child(3){
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+} 
+#pdt-hlt>button{
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+}
+#product-head{
+    height:450px
+}
+#pdt-type{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.sub-pdt{
+    width: 80%;
+}
+#pdt-bg>p{
+    font-size:35px
+}
+#about-social>div>h4{
+    font-size: 25px;
+}
+#about-social>div>p>i{
+    margin: 20px;
+}
+#copyright{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+#copyright>h6>span{
+    opacity: 0;
+}
+}

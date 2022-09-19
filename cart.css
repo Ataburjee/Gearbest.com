@@ -1,0 +1,67 @@
+table,
+td,
+th {
+  /* border: 1px solid #ddd; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  text-align: center;
+}
+td:first-child{
+    text-align: left;
+    padding-left: 170px;
+}
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tr > th {
+  color: white;
+}
+table>thead{
+    margin-bottom: 30px;
+}
+
+
+tbody>tr>td>div>div{
+    border: 1px solid;
+    height: 21px;
+    width: 21px;
+    cursor: pointer;
+}
+
+.checkout{
+    height: 200px;
+    width: 70%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    margin-top: 30px;
+}
+.checkout>div{
+  display: flex;
+  justify-content: right;
+}
+.check{
+  margin-left: 100px;
+  padding: 20px;
+}
+.checkout>div>div:first-child{
+  margin-top: 30px;
+}
+.check>h2{
+  color: red;
+}
+.checkout>h1{
+  text-align: end;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}

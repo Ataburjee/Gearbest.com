@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="shortcut icon" href="./Images/R+F.ico" type="image/x-icon">
+    <style>
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+             'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #heading{
+            text-align: center;
+            margin-top: 50px;
+            
+        }
+
+        #price{
+            margin: auto;
+            margin-top: 100px;
+            width: 30%;
+            height: 360px;
+            font-weight: 600;
+            font-size: 16px;
+            /* border: 1px solid red; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+             rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+             border-radius: 5px;
+        }
+        h2{
+            display: inline-block;
+            margin-left: 20px;
+        }
+        input{
+            margin-top: 20px;
+            width: 60%;
+            height: 25px;
+            padding: 5px;
+            border: 1px solid lightgray;
+           margin-left: 10px;
+           border-radius:5px;
+        }
+
+        p{
+            display: inline-block;
+        }
+
+        table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  /* margin: auto; */
+  margin-top: 20px;
+  text-align: center;
+}
+
+table td,
+table th {
+  /* border: 1px solid #ddd; */
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  /* background-color: #0468aa; */
+  color: white;
+  text-align: center;
+}
+tr>td{
+    width: 50%;
+}
+
+#proceed{
+    width: 20%;
+    height: 40px;
+    
+    margin: auto;
+    margin-top: 50px;
+   margin-right: 100px;
+}
+
+#continue{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: aliceblue;
+    font-size: large;
+    border: 0px;
+}
+
+button{
+    /* width: 100px; */
+    padding: 10px 40px;
+    background-color: black;
+    color: aliceblue;
+    border: 0px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+        
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h1>Order Overview</h1>
+    </div>
+
+    <div id="price">
+
+    <h2>Price Details</h2>
+    <hr>
+
+    <div id="summary">
+        <table border="0">
+            <thead>
+                <tr>
+                    <td>Sub Total</td>
+                    <td id="pl1"></td>
+
+                </tr>
+
+                <tr>
+                    <td>Shipping Fee</td>
+                    <td id="pl4">10</td>
+                </tr>
+
+                <tr>
+                    <td>Promo Discount</td>
+                    <td id="pl6">0</td>
+                </tr>
+
+
+
+            </thead>
+        </table>  
+        <input type="text"  id="promo" placeholder="  Enter Promo Code For Extra Discount" >
+        <button>Apply</button>
+    </div>
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Total Amount</td>
+                <td id="pl7">0</td>
+            </tr>
+        </thead>
+    </table>
+
+    </div>
+
+    <div id="proceed">
+
+        <input type="submit" name="" value="Continue" id="continue">
+
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#continue").addEventListener("click",movePage);
+    document.querySelector("button").addEventListener("click",showtotal);
+    var subtotal=localStorage.getItem("totalPrice");
+    document.querySelector("#pl1").innerText="$"+subtotal;
+    var shipping=document.querySelector("#pl4").innerText;
+    var total=Number(subtotal)+Number(shipping);
+    document.querySelector("#pl7").innerText="$"+total;
+    
+    function showtotal(){
+        var promo=document.querySelector("#promo").value;
+        var matches = promo.match(/(\d+)/);
+        var matches=+matches[0];
+        var discount=total*matches/100;
+        var finalAmt=total-discount;
+        document.querySelector("#pl6").innerText="$"+discount;
+        document.querySelector("button").style.backgroundColor="green";
+        document.querySelector("button").innerText="Applied";
+        document.querySelector("#pl7").innerText="$"+finalAmt;
+        localStorage.setItem("amtPayable",finalAmt);
+    }
+
+    function movePage(){
+        event.preventDefault();
+        window.location.href="/addresh.html";
+    }
+</script>
